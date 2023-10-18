@@ -1,0 +1,4 @@
+/server-bw: ${MODULE_DIR}/target/release/server-bw
+/client-bw: ${MODULE_DIR}/target/release/client-bw
+/server-latency: ${MODULE_DIR}/target/release/server-latency
+/client-latency: ${MODULE_DIR}/target/release/client-latency
