@@ -1,0 +1,12 @@
+[package]
+name = "net_demos"
+version = "0.1.0"
+edition = "2021"
+
+# [[bin]]
+# name = "udp-server"
+# path = "src/udp-server.rs"
+
+[[bin]]
+name = "http-server"
+path = "src/http-server.rs"

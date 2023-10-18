@@ -1,0 +1,1 @@
+/http-server: ${MODULE_DIR}/target/release/http-server
