@@ -1,0 +1,33 @@
+[package]
+name = "rust-microbench"
+version = "0.1.0"
+edition = "2021"
+authors = ["hukeyang <hky1999@buaa.edu.cn>"]
+description = "A Rust-based simple micro benchmark for heap alloc and threading"
+license = "Mulan PSL v2"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+core_affinity = "0.8.0"
+
+[[bin]]
+name = "allocate"
+path = "src/mm/allocate.rs"
+
+[[bin]]
+name = "allocate_zero"
+path = "src/mm/allocate_zero.rs"
+
+[[bin]]
+name = "thread_spawn"
+path = "src/thread/thread_spawn.rs"
+
+[[bin]]
+name = "thread_yield"
+path = "src/thread/thread_yield.rs"
+
+[profile.release]
+debug = true
+opt-level = 3  # Optimize for size. Fix: link error when target is aarch64-unknown-shyper.
+lto = true

@@ -1,6 +1,6 @@
 # Directories storing files downloaded or collected from the OS
 upstream
-src
+# src
 ROOTFS
 install
 

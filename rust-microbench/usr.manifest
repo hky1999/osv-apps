@@ -1,0 +1,4 @@
+/allocate: ${MODULE_DIR}/target/release/allocate
+/allocate_zero: ${MODULE_DIR}/target/release/allocate_zero
+/thread_spawn: ${MODULE_DIR}/target/release/thread_spawn
+/thread_yield: ${MODULE_DIR}/target/release/thread_yield
