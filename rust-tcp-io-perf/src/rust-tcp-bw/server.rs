@@ -4,6 +4,7 @@ extern crate hdrhist;
 
 use rust_tcp_io_perf::connection;
 use rust_tcp_io_perf::config;
+use rust_tcp_io_perf::threading;
 // use rust_tcp_io_perf::print_utils;
 use std::io::Read;
 use std::time::Instant;
@@ -22,7 +23,9 @@ fn main() {
     let mut _i = 0;
 
     let mut stream = connection::server_listen_and_get_first_connection(&args.port);
-
+    connection::setup(&args, &mut stream);
+    threading::setup(&args);
+    
     let mut start = Instant::now();
     let mut end = Instant::now();
     while active {

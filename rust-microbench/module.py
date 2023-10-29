@@ -1,3 +1,3 @@
 from osv.modules import api
 
-default = api.run(cmdline="/http-server")
+default = api.run(cmdline="/thread_yield")
